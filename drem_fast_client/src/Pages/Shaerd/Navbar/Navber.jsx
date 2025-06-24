@@ -1,9 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router';
+import DreamFastLogo from '../Dreamfast/DreamFastLogo';
 
 const Navber = () => {
     const navItems = <>
-     <li><NavLink>Home</NavLink></li>
+     <li><NavLink to='/home'>Home</NavLink></li>
      <li><NavLink>About Us</NavLink></li>
     </>
 
@@ -20,7 +21,7 @@ const Navber = () => {
        {navItems }
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">DreamFast</a>
+    <a className="btn btn-ghost text-xl"><DreamFastLogo></DreamFastLogo></a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
