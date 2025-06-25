@@ -3,6 +3,8 @@ import {
 } from "react-router";
 import MainLayout from "../Layouts/MainLayout";
 import Home from "../Pages/Home/Home";
+import AuthLayout from "../AuthLayout/AuthLayout";
+import Login from "../Pages/Authintation/Login/Login";
 
 
 
@@ -22,4 +24,14 @@ export const router = createBrowserRouter([
        
     ]
   },
+  {
+    path:'/',
+    Component:AuthLayout,
+    children:[
+    {
+     path:'login',
+     Component:Login
+    },
+  ]
+  }
 ]);
