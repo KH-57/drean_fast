@@ -5,6 +5,7 @@ import { router } from './Router/Routes.jsx'
 import { RouterProvider } from 'react-router'
 import 'aos/dist/aos.css'; 
 import AOS from 'aos';
+import AuthProvider from './Context/AuthProvider/AuthProvider.jsx'
  AOS.init();
 
 
@@ -12,7 +13,9 @@ import AOS from 'aos';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
      <div className='max-w-10/12 mx-auto font-urbanist'>
-       <RouterProvider router={router} />
+      <AuthProvider>
+         <RouterProvider router={router} />
+      </AuthProvider>
      </div>
   </StrictMode>,
 )
