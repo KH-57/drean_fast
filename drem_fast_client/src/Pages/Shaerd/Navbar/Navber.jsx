@@ -5,7 +5,8 @@ import DreamFastLogo from '../Dreamfast/DreamFastLogo';
 const Navber = () => {
     const navItems = <>
      <li><NavLink to='/home'>Home</NavLink></li>
-     <li><NavLink>About Us</NavLink></li>
+     <li><NavLink to='/about'>About Us</NavLink></li>
+     <li><NavLink to='/covarege'>Covarege</NavLink></li>
     </>
 
     return (
@@ -21,7 +22,7 @@ const Navber = () => {
        {navItems }
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl"><DreamFastLogo></DreamFastLogo></a>
+    <DreamFastLogo></DreamFastLogo>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

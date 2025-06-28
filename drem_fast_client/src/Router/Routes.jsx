@@ -6,6 +6,7 @@ import Home from "../Pages/Home/Home";
 import AuthLayout from "../AuthLayout/AuthLayout";
 import Login from "../Pages/Authintation/Login/Login";
 import Register from "../Pages/Authintation/Register/Register";
+import Covarege from "../Pages/Covarege/Covarege";
 
 
 
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
         {
           path :'/home',
           Component:Home,
+        },
+         {
+          path :'/covarege',
+          Component:Covarege,
         },
        
     ]
